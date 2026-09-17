@@ -2,7 +2,7 @@ import SwiftUI
 
 public struct ProviderListView: View {
     @ObservedObject public var providerRepo: ProviderRepository
-    @State private var editingProviderId: String? = nil
+    @State private var editingProvider: ProviderSetting? = nil
     
     public init(providerRepo: ProviderRepository) {
         self.providerRepo = providerRepo
@@ -31,22 +31,19 @@ public struct ProviderListView: View {
                     }
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        editingProviderId = provider.id
+                        editingProvider = provider
                     }
                 }
             }
         }
         .navigationTitle("Model Providers")
-        .sheet(item: $editingProviderId) { providerId in
-            if let provider = providerRepo.providers.first(where: { $0.id == providerId }) {
-                ProviderEditSheet(provider: provider, repo: providerRepo)
-            }
+        .sheet(item: Binding(
+            get: { editingProvider },
+            set: { editingProvider = $0 }
+        )) { provider in
+            ProviderEditSheet(provider: provider, repo: providerRepo)
         }
     }
-}
-
-extension ProviderSetting {
-    var idIdentifier: String { id }
 }
 
 struct ProviderEditSheet: View {
