@@ -1,4 +1,5 @@
 import SwiftUI
+import WebKit
 
 public struct AgentBrowserView: View {
     @StateObject private var session = AgentBrowserSession()

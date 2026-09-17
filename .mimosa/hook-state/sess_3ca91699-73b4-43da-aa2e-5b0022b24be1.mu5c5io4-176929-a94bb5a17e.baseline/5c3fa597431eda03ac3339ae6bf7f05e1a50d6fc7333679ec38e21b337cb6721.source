@@ -1,0 +1,32 @@
+name: Build Pilot.AI (.ipa)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build iOS App with Xcode
+        run: |
+          xcodebuild -project PilotAI.xcodeproj -scheme PilotAI -sdk iphoneos -configuration Release CODE_SIGNING_ALLOWED=NO -derivedDataPath build/DerivedData build
+
+      - name: Package Payload to .ipa
+        run: |
+          mkdir -p build/Payload
+          cp -r build/DerivedData/Build/Products/Release-iphoneos/PilotAI.app build/Payload/
+          cd build && zip -r Pilot.ipa Payload
+
+      - name: Upload .ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pilot-IPA
+          path: build/Pilot.ipa

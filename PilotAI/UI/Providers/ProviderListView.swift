@@ -49,7 +49,7 @@ extension ProviderSetting {
 
 struct ProviderEditSheet: View {
     let provider: ProviderSetting
-    @ObservedObject let repo: ProviderRepository
+    @ObservedObject var repo: ProviderRepository
     @Environment(\.dismiss) var dismiss
     @State private var apiKey: String = ""
     @State private var baseUrl: String = ""
