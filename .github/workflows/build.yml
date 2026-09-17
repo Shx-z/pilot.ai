@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Build iOS arm64 Binary with Swift Compiler
+      - name: Build iOS arm64 App with Xcode
         run: |
           SDK_PATH=$(xcrun --sdk iphoneos --show-sdk-path)
           mkdir -p build/Payload/Pilot.app
@@ -23,7 +23,7 @@ jobs:
             -sdk "$SDK_PATH" \
             -parse-as-library \
             -o build/Payload/Pilot.app/Pilot \
-            $(find PilotAI -name "*.swift")
+            $(find PilotAI -name "*.swift") || xcodebuild -project PilotAI.xcodeproj -scheme PilotAI -sdk iphoneos -configuration Release CODE_SIGNING_ALLOWED=NO
 
       - name: Package Payload to .ipa
         run: |
