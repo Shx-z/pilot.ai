@@ -1,8 +1,13 @@
 import SwiftUI
 
+private struct ProviderWrapper: Identifiable {
+    let id: String
+    let provider: ProviderSetting
+}
+
 public struct ProviderListView: View {
     @ObservedObject public var providerRepo: ProviderRepository
-    @State private var editingProvider: ProviderSetting? = nil
+    @State private var editingProvider: ProviderWrapper? = nil
     
     public init(providerRepo: ProviderRepository) {
         self.providerRepo = providerRepo
@@ -31,17 +36,14 @@ public struct ProviderListView: View {
                     }
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        editingProvider = provider
+                        editingProvider = ProviderWrapper(id: provider.id, provider: provider)
                     }
                 }
             }
         }
         .navigationTitle("Model Providers")
-        .sheet(item: Binding(
-            get: { editingProvider },
-            set: { editingProvider = $0 }
-        )) { provider in
-            ProviderEditSheet(provider: provider, repo: providerRepo)
+        .sheet(item: $editingProvider) { wrapper in
+            ProviderEditSheet(provider: wrapper.provider, repo: providerRepo)
         }
     }
 }
