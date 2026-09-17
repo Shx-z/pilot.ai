@@ -7,12 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00000012C8F000100000000 /* PilotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000012C8F000100000000 /* PilotApp.swift */; };
+		A10000002C8F000100000000 /* AgentBrowserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000002C8F000100000000 /* AgentBrowserSession.swift */; };
+		A10000012C8F000100000000 /* AgentLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000012C8F000100000000 /* AgentLoop.swift */; };
+		A10000022C8F000100000000 /* AgentPromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000022C8F000100000000 /* AgentPromptBuilder.swift */; };
+		A10000032C8F000100000000 /* AgentRunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000032C8F000100000000 /* AgentRunController.swift */; };
+		A10000042C8F000100000000 /* AgentRuntimeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000042C8F000100000000 /* AgentRuntimeSession.swift */; };
+		A10000052C8F000100000000 /* McpHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000052C8F000100000000 /* McpHttpClient.swift */; };
+		A10000062C8F000100000000 /* AgentProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000062C8F000100000000 /* AgentProviderClient.swift */; };
+		A10000072C8F000100000000 /* AnthropicMessagesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000072C8F000100000000 /* AnthropicMessagesClient.swift */; };
+		A10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift */; };
+		A10000092C8F000100000000 /* OpenAiResponsesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000092C8F000100000000 /* OpenAiResponsesClient.swift */; };
+		A100000A2C8F000100000000 /* SkillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000A2C8F000100000000 /* SkillManager.swift */; };
+		A100000B2C8F000100000000 /* AgentToolCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000B2C8F000100000000 /* AgentToolCatalog.swift */; };
+		A100000C2C8F000100000000 /* JsonSchemaValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000C2C8F000100000000 /* JsonSchemaValidator.swift */; };
+		A100000D2C8F000100000000 /* PilotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000D2C8F000100000000 /* PilotApp.swift */; };
+		A100000E2C8F000100000000 /* CharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000E2C8F000100000000 /* CharacterEntity.swift */; };
+		A100000F2C8F000100000000 /* ConversationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000F2C8F000100000000 /* ConversationEntity.swift */; };
+		A10000102C8F000100000000 /* McpServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000102C8F000100000000 /* McpServerEntity.swift */; };
+		A10000112C8F000100000000 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000112C8F000100000000 /* MessageEntity.swift */; };
+		A10000122C8F000100000000 /* ProviderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000122C8F000100000000 /* ProviderEntity.swift */; };
+		A10000132C8F000100000000 /* RunEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000132C8F000100000000 /* RunEntity.swift */; };
+		A10000142C8F000100000000 /* SkillEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000142C8F000100000000 /* SkillEntity.swift */; };
+		A10000152C8F000100000000 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000152C8F000100000000 /* AppearanceSettings.swift */; };
+		A10000162C8F000100000000 /* CustomBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000162C8F000100000000 /* CustomBody.swift */; };
+		A10000172C8F000100000000 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000172C8F000100000000 /* CustomHeader.swift */; };
+		A10000182C8F000100000000 /* McpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000182C8F000100000000 /* McpServer.swift */; };
+		A10000192C8F000100000000 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000192C8F000100000000 /* Model.swift */; };
+		A100001A2C8F000100000000 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001A2C8F000100000000 /* Provider.swift */; };
+		A100001B2C8F000100000000 /* Reasoning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001B2C8F000100000000 /* Reasoning.swift */; };
+		A100001C2C8F000100000000 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001C2C8F000100000000 /* Settings.swift */; };
+		A100001D2C8F000100000000 /* BuiltinProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001D2C8F000100000000 /* BuiltinProviders.swift */; };
+		A100001E2C8F000100000000 /* OfficialModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001E2C8F000100000000 /* OfficialModelCatalog.swift */; };
+		A100001F2C8F000100000000 /* AgentMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001F2C8F000100000000 /* AgentMemoryRepository.swift */; };
+		A10000202C8F000100000000 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000202C8F000100000000 /* CharacterRepository.swift */; };
+		A10000212C8F000100000000 /* ConversationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000212C8F000100000000 /* ConversationRepository.swift */; };
+		A10000222C8F000100000000 /* EtaBackupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000222C8F000100000000 /* EtaBackupRepository.swift */; };
+		A10000232C8F000100000000 /* McpServerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000232C8F000100000000 /* McpServerRepository.swift */; };
+		A10000242C8F000100000000 /* ProviderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000242C8F000100000000 /* ProviderRepository.swift */; };
+		A10000252C8F000100000000 /* SkillRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000252C8F000100000000 /* SkillRepository.swift */; };
+		A10000262C8F000100000000 /* AppShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000262C8F000100000000 /* AppShell.swift */; };
+		A10000272C8F000100000000 /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000272C8F000100000000 /* AppearanceSettingsView.swift */; };
+		A10000282C8F000100000000 /* DataBackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000282C8F000100000000 /* DataBackupView.swift */; };
+		A10000292C8F000100000000 /* AgentBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000292C8F000100000000 /* AgentBrowserView.swift */; };
+		A100002A2C8F000100000000 /* CharacterLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002A2C8F000100000000 /* CharacterLibraryView.swift */; };
+		A100002B2C8F000100000000 /* AgentStatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002B2C8F000100000000 /* AgentStatusCardView.swift */; };
+		A100002C2C8F000100000000 /* ChatHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002C2C8F000100000000 /* ChatHomeView.swift */; };
+		A100002D2C8F000100000000 /* ChatInputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002D2C8F000100000000 /* ChatInputBarView.swift */; };
+		A100002E2C8F000100000000 /* ChatMessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002E2C8F000100000000 /* ChatMessageItemView.swift */; };
+		A100002F2C8F000100000000 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100002F2C8F000100000000 /* MessageListView.swift */; };
+		A10000302C8F000100000000 /* ToolChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000302C8F000100000000 /* ToolChipView.swift */; };
+		A10000312C8F000100000000 /* ListEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000312C8F000100000000 /* ListEmptyState.swift */; };
+		A10000322C8F000100000000 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000322C8F000100000000 /* MarkdownView.swift */; };
+		A10000332C8F000100000000 /* PermissionHealthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000332C8F000100000000 /* PermissionHealthCard.swift */; };
+		A10000342C8F000100000000 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000342C8F000100000000 /* SectionHeader.swift */; };
+		A10000352C8F000100000000 /* McpServersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000352C8F000100000000 /* McpServersView.swift */; };
+		A10000362C8F000100000000 /* AgentMemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000362C8F000100000000 /* AgentMemoryView.swift */; };
+		A10000372C8F000100000000 /* ProviderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000372C8F000100000000 /* ProviderListView.swift */; };
+		A10000382C8F000100000000 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000382C8F000100000000 /* SettingsView.swift */; };
+		A10000392C8F000100000000 /* AgentSkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000392C8F000100000000 /* AgentSkillsView.swift */; };
+		A100003A2C8F000100000000 /* AgentToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100003A2C8F000100000000 /* AgentToolsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A00000022C8F000100000000 /* PilotAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B00000012C8F000100000000 /* PilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotAI/App/PilotApp.swift; sourceTree = "<group>"; };
+		B10000002C8F000100000000 /* AgentBrowserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Browser/AgentBrowserSession.swift"; sourceTree = "<group>"; };
+		B10000012C8F000100000000 /* AgentLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentLoop.swift"; sourceTree = "<group>"; };
+		B10000022C8F000100000000 /* AgentPromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentPromptBuilder.swift"; sourceTree = "<group>"; };
+		B10000032C8F000100000000 /* AgentRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRunController.swift"; sourceTree = "<group>"; };
+		B10000042C8F000100000000 /* AgentRuntimeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRuntimeSession.swift"; sourceTree = "<group>"; };
+		B10000052C8F000100000000 /* McpHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/MCP/McpHttpClient.swift"; sourceTree = "<group>"; };
+		B10000062C8F000100000000 /* AgentProviderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AgentProviderClient.swift"; sourceTree = "<group>"; };
+		B10000072C8F000100000000 /* AnthropicMessagesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AnthropicMessagesClient.swift"; sourceTree = "<group>"; };
+		B10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiChatCompletionsClient.swift"; sourceTree = "<group>"; };
+		B10000092C8F000100000000 /* OpenAiResponsesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiResponsesClient.swift"; sourceTree = "<group>"; };
+		B100000A2C8F000100000000 /* SkillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Skills/SkillManager.swift"; sourceTree = "<group>"; };
+		B100000B2C8F000100000000 /* AgentToolCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/AgentToolCatalog.swift"; sourceTree = "<group>"; };
+		B100000C2C8F000100000000 /* JsonSchemaValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/JsonSchemaValidator.swift"; sourceTree = "<group>"; };
+		B100000D2C8F000100000000 /* PilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/App/PilotApp.swift"; sourceTree = "<group>"; };
+		B100000E2C8F000100000000 /* CharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/CharacterEntity.swift"; sourceTree = "<group>"; };
+		B100000F2C8F000100000000 /* ConversationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ConversationEntity.swift"; sourceTree = "<group>"; };
+		B10000102C8F000100000000 /* McpServerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/McpServerEntity.swift"; sourceTree = "<group>"; };
+		B10000112C8F000100000000 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/MessageEntity.swift"; sourceTree = "<group>"; };
+		B10000122C8F000100000000 /* ProviderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ProviderEntity.swift"; sourceTree = "<group>"; };
+		B10000132C8F000100000000 /* RunEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/RunEntity.swift"; sourceTree = "<group>"; };
+		B10000142C8F000100000000 /* SkillEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/SkillEntity.swift"; sourceTree = "<group>"; };
+		B10000152C8F000100000000 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/AppearanceSettings.swift"; sourceTree = "<group>"; };
+		B10000162C8F000100000000 /* CustomBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomBody.swift"; sourceTree = "<group>"; };
+		B10000172C8F000100000000 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomHeader.swift"; sourceTree = "<group>"; };
+		B10000182C8F000100000000 /* McpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/McpServer.swift"; sourceTree = "<group>"; };
+		B10000192C8F000100000000 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Model.swift"; sourceTree = "<group>"; };
+		B100001A2C8F000100000000 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Provider.swift"; sourceTree = "<group>"; };
+		B100001B2C8F000100000000 /* Reasoning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Reasoning.swift"; sourceTree = "<group>"; };
+		B100001C2C8F000100000000 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Settings.swift"; sourceTree = "<group>"; };
+		B100001D2C8F000100000000 /* BuiltinProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/BuiltinProviders.swift"; sourceTree = "<group>"; };
+		B100001E2C8F000100000000 /* OfficialModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/OfficialModelCatalog.swift"; sourceTree = "<group>"; };
+		B100001F2C8F000100000000 /* AgentMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/AgentMemoryRepository.swift"; sourceTree = "<group>"; };
+		B10000202C8F000100000000 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/CharacterRepository.swift"; sourceTree = "<group>"; };
+		B10000212C8F000100000000 /* ConversationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ConversationRepository.swift"; sourceTree = "<group>"; };
+		B10000222C8F000100000000 /* EtaBackupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/EtaBackupRepository.swift"; sourceTree = "<group>"; };
+		B10000232C8F000100000000 /* McpServerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/McpServerRepository.swift"; sourceTree = "<group>"; };
+		B10000242C8F000100000000 /* ProviderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ProviderRepository.swift"; sourceTree = "<group>"; };
+		B10000252C8F000100000000 /* SkillRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/SkillRepository.swift"; sourceTree = "<group>"; };
+		B10000262C8F000100000000 /* AppShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/App/AppShell.swift"; sourceTree = "<group>"; };
+		B10000272C8F000100000000 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Appearance/AppearanceSettingsView.swift"; sourceTree = "<group>"; };
+		B10000282C8F000100000000 /* DataBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Backup/DataBackupView.swift"; sourceTree = "<group>"; };
+		B10000292C8F000100000000 /* AgentBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Browser/AgentBrowserView.swift"; sourceTree = "<group>"; };
+		B100002A2C8F000100000000 /* CharacterLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Characters/CharacterLibraryView.swift"; sourceTree = "<group>"; };
+		B100002B2C8F000100000000 /* AgentStatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/AgentStatusCardView.swift"; sourceTree = "<group>"; };
+		B100002C2C8F000100000000 /* ChatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatHomeView.swift"; sourceTree = "<group>"; };
+		B100002D2C8F000100000000 /* ChatInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatInputBarView.swift"; sourceTree = "<group>"; };
+		B100002E2C8F000100000000 /* ChatMessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatMessageItemView.swift"; sourceTree = "<group>"; };
+		B100002F2C8F000100000000 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/MessageListView.swift"; sourceTree = "<group>"; };
+		B10000302C8F000100000000 /* ToolChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ToolChipView.swift"; sourceTree = "<group>"; };
+		B10000312C8F000100000000 /* ListEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/ListEmptyState.swift"; sourceTree = "<group>"; };
+		B10000322C8F000100000000 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/MarkdownView.swift"; sourceTree = "<group>"; };
+		B10000332C8F000100000000 /* PermissionHealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/PermissionHealthCard.swift"; sourceTree = "<group>"; };
+		B10000342C8F000100000000 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/SectionHeader.swift"; sourceTree = "<group>"; };
+		B10000352C8F000100000000 /* McpServersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/MCP/McpServersView.swift"; sourceTree = "<group>"; };
+		B10000362C8F000100000000 /* AgentMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Memory/AgentMemoryView.swift"; sourceTree = "<group>"; };
+		B10000372C8F000100000000 /* ProviderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Providers/ProviderListView.swift"; sourceTree = "<group>"; };
+		B10000382C8F000100000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Settings/SettingsView.swift"; sourceTree = "<group>"; };
+		B10000392C8F000100000000 /* AgentSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Skills/AgentSkillsView.swift"; sourceTree = "<group>"; };
+		B100003A2C8F000100000000 /* AgentToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Tools/AgentToolsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +145,6 @@
 		A00000042C8F000100000000 = {
 			isa = PBXGroup;
 			children = (
-				B00000012C8F000100000000 /* PilotApp.swift */,
 				A00000022C8F000100000000 /* PilotAI.app */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +206,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00000012C8F000100000000 /* PilotApp.swift in Sources */,
+				A10000002C8F000100000000 /* AgentBrowserSession.swift in Sources */,
+				A10000012C8F000100000000 /* AgentLoop.swift in Sources */,
+				A10000022C8F000100000000 /* AgentPromptBuilder.swift in Sources */,
+				A10000032C8F000100000000 /* AgentRunController.swift in Sources */,
+				A10000042C8F000100000000 /* AgentRuntimeSession.swift in Sources */,
+				A10000052C8F000100000000 /* McpHttpClient.swift in Sources */,
+				A10000062C8F000100000000 /* AgentProviderClient.swift in Sources */,
+				A10000072C8F000100000000 /* AnthropicMessagesClient.swift in Sources */,
+				A10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift in Sources */,
+				A10000092C8F000100000000 /* OpenAiResponsesClient.swift in Sources */,
+				A100000A2C8F000100000000 /* SkillManager.swift in Sources */,
+				A100000B2C8F000100000000 /* AgentToolCatalog.swift in Sources */,
+				A100000C2C8F000100000000 /* JsonSchemaValidator.swift in Sources */,
+				A100000D2C8F000100000000 /* PilotApp.swift in Sources */,
+				A100000E2C8F000100000000 /* CharacterEntity.swift in Sources */,
+				A100000F2C8F000100000000 /* ConversationEntity.swift in Sources */,
+				A10000102C8F000100000000 /* McpServerEntity.swift in Sources */,
+				A10000112C8F000100000000 /* MessageEntity.swift in Sources */,
+				A10000122C8F000100000000 /* ProviderEntity.swift in Sources */,
+				A10000132C8F000100000000 /* RunEntity.swift in Sources */,
+				A10000142C8F000100000000 /* SkillEntity.swift in Sources */,
+				A10000152C8F000100000000 /* AppearanceSettings.swift in Sources */,
+				A10000162C8F000100000000 /* CustomBody.swift in Sources */,
+				A10000172C8F000100000000 /* CustomHeader.swift in Sources */,
+				A10000182C8F000100000000 /* McpServer.swift in Sources */,
+				A10000192C8F000100000000 /* Model.swift in Sources */,
+				A100001A2C8F000100000000 /* Provider.swift in Sources */,
+				A100001B2C8F000100000000 /* Reasoning.swift in Sources */,
+				A100001C2C8F000100000000 /* Settings.swift in Sources */,
+				A100001D2C8F000100000000 /* BuiltinProviders.swift in Sources */,
+				A100001E2C8F000100000000 /* OfficialModelCatalog.swift in Sources */,
+				A100001F2C8F000100000000 /* AgentMemoryRepository.swift in Sources */,
+				A10000202C8F000100000000 /* CharacterRepository.swift in Sources */,
+				A10000212C8F000100000000 /* ConversationRepository.swift in Sources */,
+				A10000222C8F000100000000 /* EtaBackupRepository.swift in Sources */,
+				A10000232C8F000100000000 /* McpServerRepository.swift in Sources */,
+				A10000242C8F000100000000 /* ProviderRepository.swift in Sources */,
+				A10000252C8F000100000000 /* SkillRepository.swift in Sources */,
+				A10000262C8F000100000000 /* AppShell.swift in Sources */,
+				A10000272C8F000100000000 /* AppearanceSettingsView.swift in Sources */,
+				A10000282C8F000100000000 /* DataBackupView.swift in Sources */,
+				A10000292C8F000100000000 /* AgentBrowserView.swift in Sources */,
+				A100002A2C8F000100000000 /* CharacterLibraryView.swift in Sources */,
+				A100002B2C8F000100000000 /* AgentStatusCardView.swift in Sources */,
+				A100002C2C8F000100000000 /* ChatHomeView.swift in Sources */,
+				A100002D2C8F000100000000 /* ChatInputBarView.swift in Sources */,
+				A100002E2C8F000100000000 /* ChatMessageItemView.swift in Sources */,
+				A100002F2C8F000100000000 /* MessageListView.swift in Sources */,
+				A10000302C8F000100000000 /* ToolChipView.swift in Sources */,
+				A10000312C8F000100000000 /* ListEmptyState.swift in Sources */,
+				A10000322C8F000100000000 /* MarkdownView.swift in Sources */,
+				A10000332C8F000100000000 /* PermissionHealthCard.swift in Sources */,
+				A10000342C8F000100000000 /* SectionHeader.swift in Sources */,
+				A10000352C8F000100000000 /* McpServersView.swift in Sources */,
+				A10000362C8F000100000000 /* AgentMemoryView.swift in Sources */,
+				A10000372C8F000100000000 /* ProviderListView.swift in Sources */,
+				A10000382C8F000100000000 /* SettingsView.swift in Sources */,
+				A10000392C8F000100000000 /* AgentSkillsView.swift in Sources */,
+				A100003A2C8F000100000000 /* AgentToolsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
