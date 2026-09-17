@@ -8,13 +8,13 @@ let package = Package(
         .macOS(.v14)
     ],
     products: [
-        .library(
+        .executable(
             name: "PilotAI",
             targets: ["PilotAI"]
         )
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "PilotAI",
             path: "PilotAI"
         )
