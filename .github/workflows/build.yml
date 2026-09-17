@@ -15,15 +15,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Swift
-        uses: swift-actions/setup-swift@v2
-        with:
-          swift-version: '6.0'
-
-      - name: Setup Theos
+      - name: Setup Theos & SDKs
         run: |
+          rm -rf $HOME/theos
           git clone --recursive https://github.com/theos/theos.git $HOME/theos
           echo "THEOS=$HOME/theos" >> $GITHUB_ENV
+          rm -rf $HOME/theos/sdks
           git clone --depth 1 https://github.com/theos/sdks.git $HOME/theos/sdks
 
       - name: Build Package with Theos
