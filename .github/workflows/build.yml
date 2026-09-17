@@ -22,7 +22,8 @@ jobs:
       - name: Package Payload to .ipa
         run: |
           mkdir -p build/Payload
-          cp -r build/DerivedData/Build/Products/Release-iphoneos/PilotAI.app build/Payload/
+          APP_PATH=$(find build/DerivedData -name "PilotAI.app" -type d | head -1)
+          cp -r "$APP_PATH" build/Payload/
           cd build && zip -r Pilot.ipa Payload
 
       - name: Upload .ipa Artifact
