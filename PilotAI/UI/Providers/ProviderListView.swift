@@ -2,12 +2,12 @@ import SwiftUI
 
 public struct ProviderListView: View {
     @ObservedObject public var providerRepo: ProviderRepository
-    @State private var editingProvider: ProviderSetting? = nil
-
+    @State private var editingProviderId: String? = nil
+    
     public init(providerRepo: ProviderRepository) {
         self.providerRepo = providerRepo
     }
-
+    
     public var body: some View {
         List {
             Section(header: Text("Configured Model Providers")) {
@@ -31,14 +31,16 @@ public struct ProviderListView: View {
                     }
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        editingProvider = provider
+                        editingProviderId = provider.id
                     }
                 }
             }
         }
         .navigationTitle("Model Providers")
-        .sheet(item: $editingProvider) { provider in
-            ProviderEditSheet(provider: provider, repo: providerRepo)
+        .sheet(item: $editingProviderId) { providerId in
+            if let provider = providerRepo.providers.first(where: { $0.id == providerId }) {
+                ProviderEditSheet(provider: provider, repo: providerRepo)
+            }
         }
     }
 }
