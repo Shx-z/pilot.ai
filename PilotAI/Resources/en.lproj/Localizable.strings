@@ -1,0 +1,20 @@
+/* Pilot.AI English Localization */
+
+"app_name" = "Pilot.AI";
+"new_chat" = "New Chat";
+"settings" = "Settings";
+"model_providers" = "Model Providers";
+"agent_tools" = "Agent Tools";
+"skills" = "Skills";
+"memory" = "Memory (MEMORY.md)";
+"characters_and_personas" = "Characters & Personas";
+"mcp_servers" = "MCP Servers";
+"builtin_browser" = "Built-in Browser";
+"data_backup" = "Data Backup";
+"appearance" = "Appearance";
+"ask_eta_anything" = "Ask Pilot.AI anything...";
+"thinking" = "Reasoning...";
+"cancel" = "Cancel";
+"save" = "Save";
+"delete" = "Delete";
+"edit" = "Edit";

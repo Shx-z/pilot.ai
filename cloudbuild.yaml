@@ -1,0 +1,19 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['submodule', 'update', '--init', '--recursive']
+
+  - name: 'ubuntu'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        apt-get update && apt-get install -y make curl git
+        export THEOS=/workspace/theos
+        git clone --recursive https://github.com/theos/theos.git $$THEOS
+        git clone --depth 1 https://github.com/theos/sdks.git $$THEOS/sdks
+        make package FINALPACKAGE=1
+
+artifacts:
+  objects:
+    location: 'gs://$_BUCKET_NAME/packages/'
+    paths: ['packages/*.ipa']

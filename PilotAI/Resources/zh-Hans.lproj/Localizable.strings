@@ -1,0 +1,20 @@
+/* Pilot.AI Simplified Chinese Localization */
+
+"app_name" = "Pilot.AI";
+"new_chat" = "新建对话";
+"settings" = "设置";
+"model_providers" = "模型提供商";
+"agent_tools" = "Agent 工具";
+"skills" = "Skill 技能";
+"memory" = "长期记忆 (MEMORY.md)";
+"characters_and_personas" = "角色与人设";
+"mcp_servers" = "MCP 服务器";
+"builtin_browser" = "内置浏览器";
+"data_backup" = "数据备份";
+"appearance" = "外观设置";
+"ask_eta_anything" = "向 Pilot.AI 提问...";
+"thinking" = "思考中...";
+"cancel" = "取消";
+"save" = "保存";
+"delete" = "删除";
+"edit" = "编辑";

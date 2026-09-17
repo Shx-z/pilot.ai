@@ -1,0 +1,9 @@
+Package: ai.pilot
+Name: Pilot.AI
+Version: 3.0.4
+Architecture: iphoneos-arm64
+Description: Feature-faithful native iOS AI Agent app
+Maintainer: Pilot Team
+Author: Pilot Team
+Section: Utilities
+Depends: firmware (>= 16.0)

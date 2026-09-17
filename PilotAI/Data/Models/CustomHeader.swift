@@ -1,0 +1,12 @@
+import Foundation
+
+/// Custom HTTP header for provider or model requests.
+public struct CustomHeader: Codable, Hashable, Sendable {
+    public let name: String
+    public let value: String
+
+    public init(name: String, value: String) {
+        self.name = name
+        self.value = value
+    }
+}
