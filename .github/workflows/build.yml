@@ -15,15 +15,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Build iOS App with Swift & Xcode
+      - name: Build iOS Package
         run: |
           SDK_PATH=$(xcrun --sdk iphoneos --show-sdk-path)
-          swift build -c release -Xswiftc -sdk -Xswiftc "$SDK_PATH" -Xswiftc -target -Xswiftc arm64-apple-ios17.0 || xcodebuild -scheme PilotAI -sdk iphoneos -configuration Release build
+          swift build -c release --triple arm64-apple-ios17.0 -Xswiftc -sdk -Xswiftc "$SDK_PATH"
 
-      - name: Package Payload to .ipa
+      - name: Create Payload and Package .ipa
         run: |
           mkdir -p build/Payload/Pilot.app
-          cp -r .build/arm64-apple-ios/release/* build/Payload/Pilot.app/ 2>/dev/null || cp -r .build/release/* build/Payload/Pilot.app/ 2>/dev/null || true
+          find .build -name "PilotAI" -type f -exec cp {} build/Payload/Pilot.app/ \; 2>/dev/null || true
+          cp -r PilotAI/Resources/* build/Payload/Pilot.app/ 2>/dev/null || true
           cd build && zip -r Pilot.ipa Payload
 
       - name: Upload .ipa Artifact
