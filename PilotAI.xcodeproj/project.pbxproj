@@ -70,65 +70,65 @@
 
 /* Begin PBXFileReference section */
 		A00000022C8F000100000000 /* PilotAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B10000002C8F000100000000 /* AgentBrowserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Browser/AgentBrowserSession.swift"; sourceTree = "<group>"; };
-		B10000012C8F000100000000 /* AgentLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentLoop.swift"; sourceTree = "<group>"; };
-		B10000022C8F000100000000 /* AgentPromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentPromptBuilder.swift"; sourceTree = "<group>"; };
-		B10000032C8F000100000000 /* AgentRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRunController.swift"; sourceTree = "<group>"; };
-		B10000042C8F000100000000 /* AgentRuntimeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRuntimeSession.swift"; sourceTree = "<group>"; };
-		B10000052C8F000100000000 /* McpHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/MCP/McpHttpClient.swift"; sourceTree = "<group>"; };
-		B10000062C8F000100000000 /* AgentProviderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AgentProviderClient.swift"; sourceTree = "<group>"; };
-		B10000072C8F000100000000 /* AnthropicMessagesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AnthropicMessagesClient.swift"; sourceTree = "<group>"; };
-		B10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiChatCompletionsClient.swift"; sourceTree = "<group>"; };
-		B10000092C8F000100000000 /* OpenAiResponsesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiResponsesClient.swift"; sourceTree = "<group>"; };
-		B100000A2C8F000100000000 /* SkillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Skills/SkillManager.swift"; sourceTree = "<group>"; };
-		B100000B2C8F000100000000 /* AgentToolCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/AgentToolCatalog.swift"; sourceTree = "<group>"; };
-		B100000C2C8F000100000000 /* JsonSchemaValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/JsonSchemaValidator.swift"; sourceTree = "<group>"; };
-		B100000D2C8F000100000000 /* PilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/App/PilotApp.swift"; sourceTree = "<group>"; };
-		B100000E2C8F000100000000 /* CharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/CharacterEntity.swift"; sourceTree = "<group>"; };
-		B100000F2C8F000100000000 /* ConversationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ConversationEntity.swift"; sourceTree = "<group>"; };
-		B10000102C8F000100000000 /* McpServerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/McpServerEntity.swift"; sourceTree = "<group>"; };
-		B10000112C8F000100000000 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/MessageEntity.swift"; sourceTree = "<group>"; };
-		B10000122C8F000100000000 /* ProviderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ProviderEntity.swift"; sourceTree = "<group>"; };
-		B10000132C8F000100000000 /* RunEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/RunEntity.swift"; sourceTree = "<group>"; };
-		B10000142C8F000100000000 /* SkillEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/SkillEntity.swift"; sourceTree = "<group>"; };
-		B10000152C8F000100000000 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/AppearanceSettings.swift"; sourceTree = "<group>"; };
-		B10000162C8F000100000000 /* CustomBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomBody.swift"; sourceTree = "<group>"; };
-		B10000172C8F000100000000 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomHeader.swift"; sourceTree = "<group>"; };
-		B10000182C8F000100000000 /* McpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/McpServer.swift"; sourceTree = "<group>"; };
-		B10000192C8F000100000000 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Model.swift"; sourceTree = "<group>"; };
-		B100001A2C8F000100000000 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Provider.swift"; sourceTree = "<group>"; };
-		B100001B2C8F000100000000 /* Reasoning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Reasoning.swift"; sourceTree = "<group>"; };
-		B100001C2C8F000100000000 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Settings.swift"; sourceTree = "<group>"; };
-		B100001D2C8F000100000000 /* BuiltinProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/BuiltinProviders.swift"; sourceTree = "<group>"; };
-		B100001E2C8F000100000000 /* OfficialModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/OfficialModelCatalog.swift"; sourceTree = "<group>"; };
-		B100001F2C8F000100000000 /* AgentMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/AgentMemoryRepository.swift"; sourceTree = "<group>"; };
-		B10000202C8F000100000000 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/CharacterRepository.swift"; sourceTree = "<group>"; };
-		B10000212C8F000100000000 /* ConversationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ConversationRepository.swift"; sourceTree = "<group>"; };
-		B10000222C8F000100000000 /* EtaBackupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/EtaBackupRepository.swift"; sourceTree = "<group>"; };
-		B10000232C8F000100000000 /* McpServerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/McpServerRepository.swift"; sourceTree = "<group>"; };
-		B10000242C8F000100000000 /* ProviderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ProviderRepository.swift"; sourceTree = "<group>"; };
-		B10000252C8F000100000000 /* SkillRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/SkillRepository.swift"; sourceTree = "<group>"; };
-		B10000262C8F000100000000 /* AppShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/App/AppShell.swift"; sourceTree = "<group>"; };
-		B10000272C8F000100000000 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Appearance/AppearanceSettingsView.swift"; sourceTree = "<group>"; };
-		B10000282C8F000100000000 /* DataBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Backup/DataBackupView.swift"; sourceTree = "<group>"; };
-		B10000292C8F000100000000 /* AgentBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Browser/AgentBrowserView.swift"; sourceTree = "<group>"; };
-		B100002A2C8F000100000000 /* CharacterLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Characters/CharacterLibraryView.swift"; sourceTree = "<group>"; };
-		B100002B2C8F000100000000 /* AgentStatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/AgentStatusCardView.swift"; sourceTree = "<group>"; };
-		B100002C2C8F000100000000 /* ChatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatHomeView.swift"; sourceTree = "<group>"; };
-		B100002D2C8F000100000000 /* ChatInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatInputBarView.swift"; sourceTree = "<group>"; };
-		B100002E2C8F000100000000 /* ChatMessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatMessageItemView.swift"; sourceTree = "<group>"; };
-		B100002F2C8F000100000000 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/MessageListView.swift"; sourceTree = "<group>"; };
-		B10000302C8F000100000000 /* ToolChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ToolChipView.swift"; sourceTree = "<group>"; };
-		B10000312C8F000100000000 /* ListEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/ListEmptyState.swift"; sourceTree = "<group>"; };
-		B10000322C8F000100000000 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/MarkdownView.swift"; sourceTree = "<group>"; };
-		B10000332C8F000100000000 /* PermissionHealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/PermissionHealthCard.swift"; sourceTree = "<group>"; };
-		B10000342C8F000100000000 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/SectionHeader.swift"; sourceTree = "<group>"; };
-		B10000352C8F000100000000 /* McpServersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/MCP/McpServersView.swift"; sourceTree = "<group>"; };
-		B10000362C8F000100000000 /* AgentMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Memory/AgentMemoryView.swift"; sourceTree = "<group>"; };
-		B10000372C8F000100000000 /* ProviderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Providers/ProviderListView.swift"; sourceTree = "<group>"; };
-		B10000382C8F000100000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Settings/SettingsView.swift"; sourceTree = "<group>"; };
-		B10000392C8F000100000000 /* AgentSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Skills/AgentSkillsView.swift"; sourceTree = "<group>"; };
-		B100003A2C8F000100000000 /* AgentToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Tools/AgentToolsView.swift"; sourceTree = "<group>"; };
+		B10000002C8F000100000000 /* AgentBrowserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Browser/AgentBrowserSession.swift"; sourceTree = SOURCE_ROOT; };
+		B10000012C8F000100000000 /* AgentLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentLoop.swift"; sourceTree = SOURCE_ROOT; };
+		B10000022C8F000100000000 /* AgentPromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentPromptBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		B10000032C8F000100000000 /* AgentRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRunController.swift"; sourceTree = SOURCE_ROOT; };
+		B10000042C8F000100000000 /* AgentRuntimeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Loop/AgentRuntimeSession.swift"; sourceTree = SOURCE_ROOT; };
+		B10000052C8F000100000000 /* McpHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/MCP/McpHttpClient.swift"; sourceTree = SOURCE_ROOT; };
+		B10000062C8F000100000000 /* AgentProviderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AgentProviderClient.swift"; sourceTree = SOURCE_ROOT; };
+		B10000072C8F000100000000 /* AnthropicMessagesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/AnthropicMessagesClient.swift"; sourceTree = SOURCE_ROOT; };
+		B10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiChatCompletionsClient.swift"; sourceTree = SOURCE_ROOT; };
+		B10000092C8F000100000000 /* OpenAiResponsesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Provider/OpenAiResponsesClient.swift"; sourceTree = SOURCE_ROOT; };
+		B100000A2C8F000100000000 /* SkillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Skills/SkillManager.swift"; sourceTree = SOURCE_ROOT; };
+		B100000B2C8F000100000000 /* AgentToolCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/AgentToolCatalog.swift"; sourceTree = SOURCE_ROOT; };
+		B100000C2C8F000100000000 /* JsonSchemaValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Agent/Tools/JsonSchemaValidator.swift"; sourceTree = SOURCE_ROOT; };
+		B100000D2C8F000100000000 /* PilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/App/PilotApp.swift"; sourceTree = SOURCE_ROOT; };
+		B100000E2C8F000100000000 /* CharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/CharacterEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B100000F2C8F000100000000 /* ConversationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ConversationEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000102C8F000100000000 /* McpServerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/McpServerEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000112C8F000100000000 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/MessageEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000122C8F000100000000 /* ProviderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/ProviderEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000132C8F000100000000 /* RunEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/RunEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000142C8F000100000000 /* SkillEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/DB/SkillEntity.swift"; sourceTree = SOURCE_ROOT; };
+		B10000152C8F000100000000 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/AppearanceSettings.swift"; sourceTree = SOURCE_ROOT; };
+		B10000162C8F000100000000 /* CustomBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomBody.swift"; sourceTree = SOURCE_ROOT; };
+		B10000172C8F000100000000 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/CustomHeader.swift"; sourceTree = SOURCE_ROOT; };
+		B10000182C8F000100000000 /* McpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/McpServer.swift"; sourceTree = SOURCE_ROOT; };
+		B10000192C8F000100000000 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Model.swift"; sourceTree = SOURCE_ROOT; };
+		B100001A2C8F000100000000 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Provider.swift"; sourceTree = SOURCE_ROOT; };
+		B100001B2C8F000100000000 /* Reasoning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Reasoning.swift"; sourceTree = SOURCE_ROOT; };
+		B100001C2C8F000100000000 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Models/Settings.swift"; sourceTree = SOURCE_ROOT; };
+		B100001D2C8F000100000000 /* BuiltinProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/BuiltinProviders.swift"; sourceTree = SOURCE_ROOT; };
+		B100001E2C8F000100000000 /* OfficialModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Providers/OfficialModelCatalog.swift"; sourceTree = SOURCE_ROOT; };
+		B100001F2C8F000100000000 /* AgentMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/AgentMemoryRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000202C8F000100000000 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/CharacterRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000212C8F000100000000 /* ConversationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ConversationRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000222C8F000100000000 /* EtaBackupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/EtaBackupRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000232C8F000100000000 /* McpServerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/McpServerRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000242C8F000100000000 /* ProviderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/ProviderRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000252C8F000100000000 /* SkillRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/Data/Repository/SkillRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B10000262C8F000100000000 /* AppShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/App/AppShell.swift"; sourceTree = SOURCE_ROOT; };
+		B10000272C8F000100000000 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Appearance/AppearanceSettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000282C8F000100000000 /* DataBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Backup/DataBackupView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000292C8F000100000000 /* AgentBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Browser/AgentBrowserView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002A2C8F000100000000 /* CharacterLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Characters/CharacterLibraryView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002B2C8F000100000000 /* AgentStatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/AgentStatusCardView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002C2C8F000100000000 /* ChatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatHomeView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002D2C8F000100000000 /* ChatInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatInputBarView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002E2C8F000100000000 /* ChatMessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ChatMessageItemView.swift"; sourceTree = SOURCE_ROOT; };
+		B100002F2C8F000100000000 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/MessageListView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000302C8F000100000000 /* ToolChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Chat/ToolChipView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000312C8F000100000000 /* ListEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/ListEmptyState.swift"; sourceTree = SOURCE_ROOT; };
+		B10000322C8F000100000000 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/MarkdownView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000332C8F000100000000 /* PermissionHealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/PermissionHealthCard.swift"; sourceTree = SOURCE_ROOT; };
+		B10000342C8F000100000000 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Components/SectionHeader.swift"; sourceTree = SOURCE_ROOT; };
+		B10000352C8F000100000000 /* McpServersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/MCP/McpServersView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000362C8F000100000000 /* AgentMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Memory/AgentMemoryView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000372C8F000100000000 /* ProviderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Providers/ProviderListView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000382C8F000100000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Settings/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		B10000392C8F000100000000 /* AgentSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Skills/AgentSkillsView.swift"; sourceTree = SOURCE_ROOT; };
+		B100003A2C8F000100000000 /* AgentToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotAI/UI/Tools/AgentToolsView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +145,65 @@
 		A00000042C8F000100000000 = {
 			isa = PBXGroup;
 			children = (
+				B10000002C8F000100000000 /* AgentBrowserSession.swift */,
+				B10000012C8F000100000000 /* AgentLoop.swift */,
+				B10000022C8F000100000000 /* AgentPromptBuilder.swift */,
+				B10000032C8F000100000000 /* AgentRunController.swift */,
+				B10000042C8F000100000000 /* AgentRuntimeSession.swift */,
+				B10000052C8F000100000000 /* McpHttpClient.swift */,
+				B10000062C8F000100000000 /* AgentProviderClient.swift */,
+				B10000072C8F000100000000 /* AnthropicMessagesClient.swift */,
+				B10000082C8F000100000000 /* OpenAiChatCompletionsClient.swift */,
+				B10000092C8F000100000000 /* OpenAiResponsesClient.swift */,
+				B100000A2C8F000100000000 /* SkillManager.swift */,
+				B100000B2C8F000100000000 /* AgentToolCatalog.swift */,
+				B100000C2C8F000100000000 /* JsonSchemaValidator.swift */,
+				B100000D2C8F000100000000 /* PilotApp.swift */,
+				B100000E2C8F000100000000 /* CharacterEntity.swift */,
+				B100000F2C8F000100000000 /* ConversationEntity.swift */,
+				B10000102C8F000100000000 /* McpServerEntity.swift */,
+				B10000112C8F000100000000 /* MessageEntity.swift */,
+				B10000122C8F000100000000 /* ProviderEntity.swift */,
+				B10000132C8F000100000000 /* RunEntity.swift */,
+				B10000142C8F000100000000 /* SkillEntity.swift */,
+				B10000152C8F000100000000 /* AppearanceSettings.swift */,
+				B10000162C8F000100000000 /* CustomBody.swift */,
+				B10000172C8F000100000000 /* CustomHeader.swift */,
+				B10000182C8F000100000000 /* McpServer.swift */,
+				B10000192C8F000100000000 /* Model.swift */,
+				B100001A2C8F000100000000 /* Provider.swift */,
+				B100001B2C8F000100000000 /* Reasoning.swift */,
+				B100001C2C8F000100000000 /* Settings.swift */,
+				B100001D2C8F000100000000 /* BuiltinProviders.swift */,
+				B100001E2C8F000100000000 /* OfficialModelCatalog.swift */,
+				B100001F2C8F000100000000 /* AgentMemoryRepository.swift */,
+				B10000202C8F000100000000 /* CharacterRepository.swift */,
+				B10000212C8F000100000000 /* ConversationRepository.swift */,
+				B10000222C8F000100000000 /* EtaBackupRepository.swift */,
+				B10000232C8F000100000000 /* McpServerRepository.swift */,
+				B10000242C8F000100000000 /* ProviderRepository.swift */,
+				B10000252C8F000100000000 /* SkillRepository.swift */,
+				B10000262C8F000100000000 /* AppShell.swift */,
+				B10000272C8F000100000000 /* AppearanceSettingsView.swift */,
+				B10000282C8F000100000000 /* DataBackupView.swift */,
+				B10000292C8F000100000000 /* AgentBrowserView.swift */,
+				B100002A2C8F000100000000 /* CharacterLibraryView.swift */,
+				B100002B2C8F000100000000 /* AgentStatusCardView.swift */,
+				B100002C2C8F000100000000 /* ChatHomeView.swift */,
+				B100002D2C8F000100000000 /* ChatInputBarView.swift */,
+				B100002E2C8F000100000000 /* ChatMessageItemView.swift */,
+				B100002F2C8F000100000000 /* MessageListView.swift */,
+				B10000302C8F000100000000 /* ToolChipView.swift */,
+				B10000312C8F000100000000 /* ListEmptyState.swift */,
+				B10000322C8F000100000000 /* MarkdownView.swift */,
+				B10000332C8F000100000000 /* PermissionHealthCard.swift */,
+				B10000342C8F000100000000 /* SectionHeader.swift */,
+				B10000352C8F000100000000 /* McpServersView.swift */,
+				B10000362C8F000100000000 /* AgentMemoryView.swift */,
+				B10000372C8F000100000000 /* ProviderListView.swift */,
+				B10000382C8F000100000000 /* SettingsView.swift */,
+				B10000392C8F000100000000 /* AgentSkillsView.swift */,
+				B100003A2C8F000100000000 /* AgentToolsView.swift */,
 				A00000022C8F000100000000 /* PilotAI.app */,
 			);
 			sourceTree = "<group>";
@@ -276,6 +335,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,6 +357,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
