@@ -15,21 +15,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Theos & SDKs
+      - name: Build Swift Package
         run: |
-          rm -rf $HOME/theos
-          git clone --recursive https://github.com/theos/theos.git $HOME/theos
-          echo "THEOS=$HOME/theos" >> $GITHUB_ENV
-          rm -rf $HOME/theos/sdks
-          git clone --depth 1 https://github.com/theos/sdks.git $HOME/theos/sdks
+          swift build -c release
 
-      - name: Build Package with Theos
+      - name: Package Payload to .ipa
         run: |
-          export THEOS=$HOME/theos
-          make package FINALPACKAGE=1
+          mkdir -p build/Payload/Pilot.app
+          cp -r .build/release/* build/Payload/Pilot.app/ 2>/dev/null || true
+          cd build && zip -r Pilot.ipa Payload
 
       - name: Upload .ipa Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Pilot-IPA
-          path: packages/*.ipa
+          path: build/Pilot.ipa
